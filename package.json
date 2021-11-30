@@ -1,0 +1,57 @@
+{
+  "name": "wallet-serve",
+  "version": "1.0.0",
+  "description": "wallet",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "egg": "^2.15.1",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-session-redis": "^2.1.0",
+    "egg-validate": "^2.0.2",
+    "koa2-ratelimit": "^0.9.0",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "egg-swagger-doc": "^2.3.2",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --title=egg-server-wallet_web",
+    "stop": "egg-scripts stop --title=egg-server-wallet_web",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "egg-bin test",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "up": "npx sequelize db:create && npx sequelize db:migrate",
+    "down": "npx sequelize db:migrate:undo"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}
