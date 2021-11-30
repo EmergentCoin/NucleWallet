@@ -1,6 +1,18 @@
-# Nginx config for wallet
+# Nucle Wallet
+![Rua](https://nucle.io/images/logo.svg)
 
-**Recommed Intranet IP**
+Nucle wallet is the first decentralized SPV wallet for Chia blockchain. Your first step to the Chia Defi world!
+
+Please check out the [wiki](https://wiki.nucle.io/) for more on this project.
+
+# Releases
+
+- [Webapp](https://wallet.nucle.io/login)
+- [Android](https://play.google.com/store/apps/details?id=io.nucle)
+- [iOS](https://apps.apple.com/us/app/nucle-chia-crypto-wallet/id1582583173)
+- Browser extensions coming soon... 
+
+# Example Nginx config
 
 ```nginx
 upstream node_server{
